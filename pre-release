@@ -2,7 +2,7 @@
 APP="$1"; IMAGE="dokku/$APP"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 set -e
-if [ "$INSTALL_WKHTMLTOX" = "false" ]
+if [ "$INSTALL_NODE" = "false" ]
 then
   echo "-----> skipping node injection..."
 else
