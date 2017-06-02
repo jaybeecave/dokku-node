@@ -1,4 +1,4 @@
 [plugin]
-description = "node instance"
+description = "dokku node"
 version = "1.0.0"
 [plugin.config]
