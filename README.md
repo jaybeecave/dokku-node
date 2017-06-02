@@ -8,8 +8,13 @@ available to compile files.
 
 On your dokku server:
 ```sh
-git clone https://github.com/pnegahdar/dokku-node.git /var/lib/dokku/plugins/dokku-node
+# On 0.3.x
+git clone https://github.com/jaybeecave/dokku-node.git /var/lib/dokku/plugins/dokku-node
 dokku plugins-install
+sh
+
+# On 0.4.x
+dokku plugin:install https://github.com/jaybeecave/dokku-node.git dokku-node
 ```
 
 All future deployments will use have node with the packages in the `pacakges` file installed by npm.
